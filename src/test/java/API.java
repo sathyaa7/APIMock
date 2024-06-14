@@ -4,7 +4,7 @@ import static io.restassured.RestAssured.given;
 
 public class API {
     public static void main(String[] args) {
-        String url = "https://jsonplaceholder.typicode.com/posts";
+        String url = "";
         System.out.println(given().when().get(url).getBody().asString());
         Pojo pojo = new Pojo();
         pojo.setUserId(11);
