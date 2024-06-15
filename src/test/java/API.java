@@ -23,6 +23,7 @@ public class API {
                 when().patch(url + "/2").
                 then().assertThat().statusCode(200);
         given().when().delete(url + "/2").then().assertThat().statusCode(200);
+        System.out.println("Basic checks");
 
 
     }
